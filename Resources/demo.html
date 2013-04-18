@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head><link rel="stylesheet" href="stylesheet/base.css"/></head>
+<body>
+  <script type="text/ruby" src="menu.rb"></script>
+
+  <script type="text/javascript">
+    (function() {
+      var process = Ti.Process.createProcess(["dig","google.de"],{});
+
+      var write_output = function(line) {
+        var output = document.getElementById('output');
+        output.innerText = output.innerText + "\n" + line;
+      }
+
+      process.setOnReadLine(write_output);
+      process.launch();
+    })();
+  </script>
+
+  <pre id="output"></pre>
+</body>
+</html>

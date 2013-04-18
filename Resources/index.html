@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head><link rel="stylesheet" href="stylesheet/base.css"/></head>
+<body>
+  <script type="text/ruby" src="menu.rb"></script>
+
+  <!-- Ruby -->
+  <script type="text/ruby">
+  def app_name
+    Ti.App.getName
+  end
+  </script>
+
+  <!-- Python -->
+  <script type="text/python">
+  def app_publisher():
+    return Ti.App.getPublisher();
+  </script>
+
+  <!-- PHP -->
+  <script type="text/php">
+  function app_version() {
+    global $Ti;
+
+    return $Ti->App->getVersion();
+  }
+  </script>
+
+  <!-- JavaScript -->
+  <script type="text/javascript">
+    (function() {
+      document.write("<p>"+app_name()+"</p>");
+      document.write("<p>"+app_publisher()+"</p>");
+      document.write("<p>"+app_version()+"</p>");
+    })();
+  </script>
+</body>
+</html>
