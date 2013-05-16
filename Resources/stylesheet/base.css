@@ -23,19 +23,19 @@ time, mark, audio, video {
 }
 
 body {
-  background: #111111;
-  background-color: #111111;
+  background: #fdf6e3;
+  background-color: #fdf6e3;
   font-family: "Open Sans", sans-serif;
   font-size: 30px;
   font-weight: 200;
   letter-spacing: -0.02em;
-  color: #eeeeee;
+  color: #586e75;
   padding: 30px;
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 20px 0;
-  color: #eeeeee;
+  color: #586e75;
   font-family: "Montserrat", Impact, sans-serif;
   line-height: 0.9em;
   letter-spacing: -0.03em;
@@ -44,6 +44,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: #e7ad52;
+  color: #78b9e6;
   text-decoration: none;
 }
